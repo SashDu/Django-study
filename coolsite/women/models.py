@@ -9,5 +9,7 @@ class Women(models.Model): #id - прописано в базовом класс
     time_update = models.DateTimeField(auto_now_add=True)
     is_published = models.BooleanField(default=True)
 
+    def __str__(self):
+        return self.title
 
 
